@@ -1,0 +1,230 @@
+/*
+Bootstrap breakpointy: 768, 992, 1200
+xs: (max-width: 767px)
+sm: (min-width: 768px) and (max-width: 991px)
+md: (min-width: 992px) and (max-width: 1199px)
+lg: (min-width: 1200px)
+
+Barvy
+ruzova: #c5308a
+cervena: #ff0000
+tmave zelena: #228b22
+jedove zelena: #00ff00
+seda: #f0f0f0
+koralova: #ff7f50
+tmave cervena: #8b0000;
+bila: #fffafa
+*/
+
+/**** Google Fonts ****/
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,400,700italic,700&subset=latin,latin-ext);
+
+
+/* nastaveni fontu pro cely dokument, vychozi velikosti pisma */
+body {
+    position: relative;
+    /*padding-top: 50px;*/
+    font-family: Verdana, serif;
+    font-size: 12px;
+}
+
+/* v breakpointu 'sm' zvetsime pismo */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* v breakpointu 'md' zvetsime pismo jeste vic */
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+
+/* vychozi barva odkazu */
+a {
+    color: #228b22;
+}
+
+/**** Full Slider ****/
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/**** Hlavni menu ****/
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-inverse {
+    border: 0;
+    background-color: maroon;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ff7f50;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fffafa;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ff7f50;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fffafa;
+}
+
+/**** Nadpisy ****/
+h2, h3 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+h2 {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #8b0000;
+}
+
+h4 {
+    font: bold;
+    text-align: center;
+}
+
+
+
+/**** Sekce ****/
+.sekce {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sekce-seda {
+    background-color: #f0f0f0;
+}
+.sekce-hneda {
+    background-color: #eee8aa;
+}
+
+
+
+/**** Novinky ****/
+.akce {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: maroon;
+    color: #fff;
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.akce h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: : center;
+}
+
+/*
+.akce p {
+    text-align: center;
+    /*margin-top: 15px;
+    font-style: italic;
+    position: relative;
+} 
+*/
+
+/**** Kdo jsem ****/
+.kdo {
+    text-align: left;
+}
+
+
+/**** Kávozrnka ****/
+.kafe {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.kafe img {
+    width: 100%;
+    max-width: 220px;
+    padding: 2px;
+    border: 2px dotted #aaa;
+}
+
+.kafe h3 {
+    text-align: center;
+} 
+
+
+/**** Kavozrnka ****/
+.media-body h3 {
+    margin-top: 0;
+}
+
+
+/**** Kontakt ****/
+#kontakt h3 {
+    margin-top: 0;
+}
+
+.kdyvolat h4 {
+    text-align: left;
+    font-style: italic;
+}
+
+.kdyvolat p {
+    color: #228b22;
+}
+
+
+/**** Paticka ****/
+.paticka {
+    padding-left: 20px;
+    font-size: 15px;
+}
+.photo-credits {
+    font-size: 12px;
+}
