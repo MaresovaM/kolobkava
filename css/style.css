@@ -16,32 +16,35 @@ tmave cervena: #8b0000;
 bila: #fffafa
 */
 
-/**** Google Fonts ****/
-@import url(https://fonts.googleapis.com/css?family=Lora:400italic,400,700italic,700&subset=latin,latin-ext);
+/**** Work Sans font ****/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800');
 
 
 /* nastaveni fontu pro cely dokument, vychozi velikosti pisma */
 body {
     position: relative;
     /*padding-top: 50px;*/
-    font-family: Verdana, serif;
-    font-size: 12px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
 }
 
 /* v breakpointu 'sm' zvetsime pismo */
+/*
 @media (min-width: 768px) and (max-width: 991px) {
     body {
         font-size: 16px;
     }
 }
+*/
 
 /* v breakpointu 'md' zvetsime pismo jeste vic */
+/*
 @media (min-width: 992px) {
     body {
         font-size: 18px;
     }
 }
-
+*/
 
 /* vychozi barva odkazu */
 a {
@@ -82,29 +85,52 @@ body {
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
+    font-weight: 400;
 }
 
 .navbar-inverse {
     border: 0;
-    background-color: maroon;
+    background-color: #3c1b06;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #ff7f50;
+    color: #eff0ee;
+}
+
+.navbar-inverse .navbar-nav > li > a:after {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    margin-left: 0;
+    content: "";
+    transition: all .25s ease;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #ffffff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover:after {
+    width: 80%;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #fffafa;
-}
-
-.navbar-inverse .navbar-brand {
-    color: #ff7f50;
+    color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
-    color: #fffafa;
+    background-color: #3c1b06;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.navbar-inverse .navbar-nav > .active > a:after {
+    width: 80%;
 }
 
 /**** Nadpisy ****/
@@ -126,7 +152,7 @@ h3 {
 }
 
 h4 {
-    font: bold;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -163,7 +189,7 @@ h4 {
 .akce h2 {
     margin-top: 5px;
     margin-bottom: 5px;
-    text-align: : center;
+    text-align: center;
 }
 
 /*
