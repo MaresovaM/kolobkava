@@ -18,6 +18,10 @@ bila: #fffafa
 
 /**** Work Sans font ****/
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800');
+/**** Kaushan - logo possibility A */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+/**** Merienda - logo possibility A */
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
 
 
 /* nastaveni fontu pro cely dokument, vychozi velikosti pisma */
@@ -27,24 +31,6 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
 }
-
-/* v breakpointu 'sm' zvetsime pismo */
-/*
-@media (min-width: 768px) and (max-width: 991px) {
-    body {
-        font-size: 16px;
-    }
-}
-*/
-
-/* v breakpointu 'md' zvetsime pismo jeste vic */
-/*
-@media (min-width: 992px) {
-    body {
-        font-size: 18px;
-    }
-}
-*/
 
 /* vychozi barva odkazu */
 a {
@@ -85,7 +71,29 @@ body {
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
-    font-weight: 400;
+    font-weight: 300;
+    min-height: 80px;
+    font-size: large;
+}
+
+.navbar .container {
+    padding-top: 15px;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: xx-large;
+    vertical-align: middle;
+    /* font-family: 'Merienda One', cursive;*/
+}
+
+.navbar-brand > img {
+    display: block;
+    max-height:50px;
+    width: auto;
+    height: auto;
 }
 
 .navbar-inverse {
@@ -126,7 +134,7 @@ body {
 .navbar-inverse .navbar-nav > .active > a:hover {
     background-color: #3c1b06;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .navbar-inverse .navbar-nav > .active > a:after {
